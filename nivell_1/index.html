@@ -1,40 +1,38 @@
 <!DOCTYPE html>
-<html lang="es">
+<html>
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Nivell 1</title>
+<style>
+.flex-container {
+  display: flex;
+  align-items: stretch;
+  background-color: #f1f1f1;
+}
+
+.flex-container > div {
+  background-color: DodgerBlue;
+  color: white;
+  margin: 10px;
+  text-align: center;
+  line-height: 75px;
+  font-size: 30px;
+}
+</style>
 </head>
 <body>
-    <style>
-        .wrapper {
-          display: flex;
-        }
-        .wrapper > div {
-          font-size: 4vh;
-          color: white;
-          background: rgb(29, 26, 27);
-          margin: .1em;
-          padding: .3em;
-          border-radius: 3px;
-          flex: 1;
-        }
-        .wrapper .wrapper > div {
-          background: pink;
-          color: hotpink;
-          }
-        </style>
-        <div class="wrapper">
-          <div>a
-          
-              <div class="wrapper">1</div>
-              <div>2</div>
-              <div>3</div>
-        
-          </div>
-        </div>
 
+<div>
 
-      
+<div class="flex-container">
+  <div style="flex-grow: 1">25</div>
+  <div style="flex-grow: 8">50</div>
+  <div style="flex-grow: 1">25</div>
+</div>
+<div class="flex-container">
+
+  <div style="flex-grow: 12">100</div>
+  
+</div>
+</div>
+
 </body>
 </html>
